@@ -1,0 +1,40 @@
+
+.kg-search-group {
+  display: grid;
+  flex: 1 1 240px;
+  gap: 6px;
+  min-width: 180px;
+}
+
+.kg-search-group label {
+  color: #475569;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.kg-search-group input {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 38px;
+  padding: 9px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+  background: #ffffff;
+  color: #1e293b;
+  font: inherit;
+  font-size: 13px;
+}
+
+.kg-search-group input:focus,
+.kg-filter-group select:focus {
+  border-color: #60a5fa;
+  outline: 2px solid #dbeafe;
+}
+
+@media (max-width: 550px) {
+  .kg-search-group {
+    flex-basis: 100%;
+    min-width: 0;
+  }
+}
